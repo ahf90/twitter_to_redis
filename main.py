@@ -17,5 +17,6 @@ logging.config.fileConfig('logging.conf')
 logger = logging.getLogger('equityvine_logger')
 
 if __name__ == '__main__':
+    # Start your prometheus metrics exporter
     start_http_server(8000)
     initiate_collection()
